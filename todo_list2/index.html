@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Profiles</title>
+    <script src="jquery.min.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <form action="#" id="f" enctype="multipart/form-data">
+        <label for="inputName">Your Name : </label>
+        <input type="text" name="inputName" id="inputName" value="" required><br>
+
+        <label><input type="radio" name="gender" value="Man" checked>Man</label>
+        <label><input type="radio" name="gender" value="Woman">Woman</label><br>
+
+        <label for="inputTeam">Your Team : </label>
+        <input type="text" name="inputTeam" id="inputTeam" value="" required><br>
+
+        <label for="inputContinent">Continent : </label>
+        <select name="inputContinent" id="inputContinent" required>
+            <option value="root">please select</option>
+            <option value="Asia">Asia</option>
+            <option value="Europe">Europe</option>
+            <option value="Africa">Africa</option>
+            <option value="South America">South America</option>
+            <option value="North Pasific">North Pasific</option>
+        </select><br>
+
+        <label for="inputPosition">Position</label>
+        <select name="inputPosition" id="inputPosition" required>
+            <option value="root">please select</option>
+            <option value="GK">GK</option>
+            <option value="DF">DF</option>
+            <option value="MF">MF</option>
+            <option value="FW">FW</option>
+        </select><br>
+
+        <input type="file" id="image" name="image" accept="image/png,image/jpeg,image/gif"><br>
+
+        <input type="submit" value="submit">
+    </form>
+
+    <h2>Player List</h2>
+    <button class="allPlayer">all Player</button>
+    <button class="onlyMen">only Men</button>
+    <button class="onlyWomen">only Women</button>
+    <div id="players">
+    </div>
+</body>
+
+</html>
